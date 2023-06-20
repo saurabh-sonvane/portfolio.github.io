@@ -30,7 +30,7 @@ export const info = {
   ],
   socials: [
     {
-      link: 'Saurabh_Sonvane_Resume.pdf', // this should be https://yourname.com/resume.pdf once you've deployed
+      link: 'https://1drv.ms/b/s!Akq8ktDdIMsVh20w82V9m_sztbFS?e=GRFVOK', // this should be https://yourname.com/resume.pdf once you've deployed
       icon: 'fa fa-file',
       label: 'resume',
     },

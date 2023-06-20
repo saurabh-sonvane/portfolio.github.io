@@ -12,14 +12,19 @@ const links = [
     active: 'home',
   },
   {
-    name: 'About Me',
-    to: '/about',
+    name: 'About',
+    to: '#aboutss',
     active: 'about',
   },
   {
     name: 'Projects',
-    to: '/projects',
+    to: '#projectss',
     active: 'projects',
+  },
+  {
+    name: 'Contact',
+    to: '#contactss',
+    active: 'contact',
   },
 ];
 
@@ -46,10 +51,14 @@ export default function Navbar({ darkMode, handleClick }) {
             className={link.active === active && !link.type && Style.active}
             sx={{ borderImageSource: info.gradient }}
           >
-            <Link to={link.to} onClick={() => setActive(link.active)} className={Style.link}>
+            <a href={link.to}>
+              {link.name}
+            </a>
+            {/* {link.name} */}
+            {/* <Link to={link.to} onClick={() => setActive(link.active)} className={Style.link}>
               {!link.type && <p style={{ padding: '0.5rem 0' }}>{link.name}</p>}
               {link.type && <h1>{link.name}</h1>}
-            </Link>
+            </Link> */}
           </Box>
         ))}
         <li>

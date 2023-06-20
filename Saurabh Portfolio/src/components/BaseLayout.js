@@ -3,11 +3,13 @@ import Style from './BaseLayout.module.scss';
 import Navbar from './Navbar';
 import Home from './home/Home';
 import About from './about/About';
+import Contact from './Contact/Contact'
 import Projects from './Projects/Projects';
 import { Route, Routes } from 'react-router-dom';
 import { Box, Grid } from '@mui/material';
 import ParticlesBg from './particles/ParticlesBg';
 import { logGa } from '../utils/log';
+
 
 export default function BaseLayout() {
   let [darkMode, setDarkMode] = useState(false);
@@ -54,11 +56,25 @@ export default function BaseLayout() {
           <Navbar darkMode={darkMode} handleClick={handleToggleDarkMode} />
         </Grid>
         <Grid item flexGrow={1}>
-          <Routes>
+        <Home darkMode={darkMode} />
+        <div id='aboutss'>
+          
+        </div>
+        <About />
+        <div id='projectss'>
+          
+        </div>
+        <Projects darkMode={darkMode} />
+        <div id='contactss'>
+          
+        </div>
+        <Contact darkMode={darkMode} />
+          {/* <Routes>
             <Route exact path={'/'} element={<Home darkMode={darkMode} />} />
             <Route exact path={'/about'} element={<About />} />
             <Route exact path={'/projects'} element={<Projects darkMode={darkMode} />} />
-          </Routes>
+            <Route exact path={'/contact'} element={<Contact darkMode={darkMode} />} />
+          </Routes> */}
         </Grid>
         {/* <Grid item>
           <Box
