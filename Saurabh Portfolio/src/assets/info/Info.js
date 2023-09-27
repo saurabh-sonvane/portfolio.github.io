@@ -30,7 +30,7 @@ export const info = {
   ],
   socials: [
     {
-      link: 'https://1drv.ms/b/s!Akq8ktDdIMsVh20w82V9m_sztbFS?e=GRFVOK', // this should be https://yourname.com/resume.pdf once you've deployed
+      link: 'https://drive.google.com/drive/folders/1F-SpOg_Fq8ILpzlSgrVWBuboyyRYM3xh', // this should be https://yourname.com/resume.pdf once you've deployed
       icon: 'fa fa-file',
       label: 'resume',
     },
