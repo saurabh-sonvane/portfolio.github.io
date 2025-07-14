@@ -57,8 +57,76 @@ export default function Projects({ darkMode }) {
             >
                 
                 <Box style={Styles}>
+                    <img style={{ height: "40%", borderRadius: "5px", }} src="governcrm.png" />
+                    <h2 style={{ color: darkMode ? "black" : "white" }}>GovernCRM</h2>
+                    <p style={{ fontSize: "14px", color: darkMode ? "black" : "white", lineHeight: "1.3", fontFamily: "sans-serif", fontWeight: "500" }}>Built the frontend from scratch using ReactJS, Zustand, React Leaflet, Python, and Django for a government-facing platform that connects over 250M U.S. voters with their representatives. Implemented dynamic UI components, real-time maps, and polling tools to enhance user engagement and accessibility.</p>
+                    <Box
+                        display={'flex'}
+                        gap={'1.5rem'}
+                        justifyContent={'center'}
+                        fontSize={{ xs: '2rem', md: '2.5rem' }}
+                        alignItems={'center'}
+                    >
+                        <RemoveRedEyeIcon onClick={() => {
+                            window.open("https://app.governcrm.us/login", '_blank').focus()
+                        }} fontSize='2.5rem' style={{ color: darkMode ? "white" : "black", cursor: "pointer" }} />
+                    </Box>
+                </Box>
+
+                <Box style={Styles}>
+                    <img style={{ height: "40%", borderRadius: "5px", }} src="mpp.png" />
+                    <h2 style={{ color: darkMode ? "black" : "white" }}>MedicinePatentPool</h2>
+                    <p style={{ fontSize: "14px", color: darkMode ? "black" : "white", lineHeight: "1.3", fontFamily: "sans-serif", fontWeight: "500" }}>Developed and customized core frontend components using ReactJS, Redux, Python, Django, and AWS for a platform used by pharmaceutical companies to manage licensing agreements with the WHO. Focused on delivering a seamless and efficient user experience in a complex, regulated environment.</p>
+                    <Box
+                        display={'flex'}
+                        gap={'1.5rem'}
+                        justifyContent={'center'}
+                        fontSize={{ xs: '2rem', md: '2.5rem' }}
+                        alignItems={'center'}
+                    >
+                        <RemoveRedEyeIcon onClick={() => {
+                            window.open("https://www.data-portal.medicinespatentpool.org/login", '_blank').focus()
+                        }} fontSize='2.5rem' style={{ color: darkMode ? "white" : "black", cursor: "pointer" }} />
+                    </Box>
+                </Box>
+
+                <Box style={Styles}>
+                    <img style={{ height: "40%", borderRadius: "5px", }} src="gridmaster.png" />
+                    <h2 style={{ color: darkMode ? "black" : "white" }}>GridMaster</h2>
+                    <p style={{ fontSize: "14px", color: darkMode ? "black" : "white", lineHeight: "1.3", fontFamily: "sans-serif", fontWeight: "500" }}>Integrated the Cashfree payment gateway and developed a secure wallet system using Wix, React Native, Python, and Django for a fantasy gaming platform centered around Formula 1 contests. Also provided ongoing technical support for mobile app features and real-time user interactions.</p>
+                    <Box
+                        display={'flex'}
+                        gap={'1.5rem'}
+                        justifyContent={'center'}
+                        fontSize={{ xs: '2rem', md: '2.5rem' }}
+                        alignItems={'center'}
+                    >
+                        <RemoveRedEyeIcon onClick={() => {
+                            window.open("https://www.gridmaster.live/", '_blank').focus()
+                        }} fontSize='2.5rem' style={{ color: darkMode ? "white" : "black", cursor: "pointer" }} />
+                    </Box>
+                </Box>
+
+                <Box style={Styles}>
+                    <img style={{ height: "40%", borderRadius: "5px", }} src="ajackus.png" />
+                    <h2 style={{ color: darkMode ? "black" : "white" }}>Ajackus</h2>
+                    <p style={{ fontSize: "14px", color: darkMode ? "black" : "white", lineHeight: "1.3", fontFamily: "sans-serif", fontWeight: "500" }}>Led the redesign and performance optimization of a corporate website with over 900 pages using ReactJS, WordPress, and AWS. Improved performance score from 30% to 75%, implemented scalable frontend architecture, and added programmatic SEO with dynamic case study pages for enhanced visibility and UX.</p>
+                    <Box
+                        display={'flex'}
+                        gap={'1.5rem'}
+                        justifyContent={'center'}
+                        fontSize={{ xs: '2rem', md: '2.5rem' }}
+                        alignItems={'center'}
+                    >
+                        <RemoveRedEyeIcon onClick={() => {
+                            window.open("https://www.ajackus.com/", '_blank').focus()
+                        }} fontSize='2.5rem' style={{ color: darkMode ? "white" : "black", cursor: "pointer" }} />
+                    </Box>
+                </Box>
+
+                <Box style={Styles}>
                     <img style={{ height: "40%", borderRadius: "5px", }} src="placeprep.png" />
-                    <h2 style={{ color: darkMode ? "black" : "white" }}>Placeprep.com</h2>
+                    <h2 style={{ color: darkMode ? "black" : "white" }}>Placeprep</h2>
                     <p style={{ fontSize: "14px", color: darkMode ? "black" : "white", lineHeight: "1.3", fontFamily: "sans-serif", fontWeight: "500" }}>Placeprep.com is a Educational website where anybody can learn about coding related topics and languages. Placeprep allows you to give mcq test, apart from that it has two logins one for user login and another for admin with email validation , this website was developed using HTML,SCSS,CSS,Javascript,Bootstrap & JSON Server</p>
                     <Box
                         display={'flex'}
@@ -67,7 +135,7 @@ export default function Projects({ darkMode }) {
                         fontSize={{ xs: '2rem', md: '2.5rem' }}
                         alignItems={'center'}
                     >
-                        <SocialIcon color="red" link={"https://github.com/s17200/PlacePrep.com"} icon={"fa fa-github"} label={"github"} />
+                        <SocialIcon color="red" link={"https://github.com/saurabh-sonvane/PlacePrep.com"} icon={"fa fa-github"} label={"github"} />
                         <RemoveRedEyeIcon onClick={() => {
                             window.open("https://place-prep-com.vercel.app/HomePage/index.html", '_blank').focus()
                         }} fontSize='2.5rem' style={{ color: darkMode ? "white" : "black", cursor: "pointer" }} />
@@ -86,7 +154,7 @@ export default function Projects({ darkMode }) {
                         fontSize={{ xs: '2rem', md: '2.5rem' }}
                         alignItems={'center'}
                     >
-                        <SocialIcon color="red" link={"https://github.com/s17200/Honey_store"} icon={"fa fa-github"} label={"github"} />
+                        <SocialIcon color="red" link={"https://github.com/saurabh-sonvane/HoneyStore"} icon={"fa fa-github"} label={"github"} />
                         <RemoveRedEyeIcon onClick={() => {
                             window.open("https://honeysotre.vercel.app", '_blank').focus()
                         }} fontSize='2.5rem' style={{ color: darkMode ? "white" : "black", cursor: "pointer" }} />

@@ -66,6 +66,35 @@ export default function About() {
     );
   }
 
+  function ExperienceText() {
+    return (
+      <>
+        <p>
+          <span style={{ color: info.baseColor }}>
+            {firstName}
+            {info.lastName.toLowerCase()} $
+          </span>{' '}
+          cd work experience
+        </p>
+        <p>
+          <span style={{ color: info.baseColor }}>
+            work experience <span className={Style.green}>(main)</span> $
+          </span>{' '}
+          ls
+        </p>
+        <ul>
+          {info.Experience.map((experience, index) => (
+            <li key={index}>
+              <p>{experience.position}</p>
+              {/* <p>{experience.companyName}</p> */}
+              <p>{experience.companyName +" | "+ experience.Location +" | "+ experience.From+ " - " + experience.To}</p>
+            </li>
+          ))}
+        </ul>
+      </>
+    );
+  }
+
   function educationText() {
     return (
       <>
@@ -83,39 +112,39 @@ export default function About() {
           ls
         </p>
         <p>
-          <span style={{ color: "Orange" }}>
-              Full Stack Web Development (Part-Time)
+          <span style={{ color: info.baseColor }}>
+            Full Stack Web Development (Part-Time)
           </span>
-          
+
         </p>
         <p>
-               <span style={{marginLeft:"30px"}}>Masai School, Bangalore</span> <br/>
-               <span style={{marginLeft:"30px"}}>August 2022 – present</span>
-               
+          <span style={{ marginLeft: "30px" }}>Masai School, Bangalore</span> <br />
+          <span style={{ marginLeft: "30px" }}>August 2022 – present</span>
+
         </p>
         <p>
-          <span style={{ color: "Orange" }}>
-              Bachelor Of Engineering
+          <span style={{ color: info.baseColor }}>
+            Bachelor Of Engineering
           </span>
-          
+
         </p>
         <p>
-               <span style={{marginLeft:"30px"}}>Information Technology</span> <br/>
-               <span style={{marginLeft:"30px"}}>Sanjivani College Of Engineering,</span> <br/>
-               <span style={{marginLeft:"30px"}}>Kopargaon</span> <br/>
-               <span style={{marginLeft:"30px"}}>June 2017 – June 2022</span>
+          <span style={{ marginLeft: "30px" }}>Information Technology</span> <br />
+          <span style={{ marginLeft: "30px" }}>Sanjivani College Of Engineering,</span> <br />
+          <span style={{ marginLeft: "30px" }}>Kopargaon</span> <br />
+          <span style={{ marginLeft: "30px" }}>June 2017 – June 2022</span>
         </p>
 
         <p>
-          <span style={{ color: "Orange" }}>
-              High School
+          <span style={{ color: info.baseColor }}>
+            High School
           </span>
-          
+
         </p>
         <p>
-               <span style={{marginLeft:"30px"}}>Tulsiramji Patil Science College,</span> <br/>
-               <span style={{marginLeft:"30px"}}>Gangakhed</span> <br/>
-               <span style={{marginLeft:"30px"}}>June 2015 – March 2017</span>
+          <span style={{ marginLeft: "30px" }}>Tulsiramji Patil Science College,</span> <br />
+          <span style={{ marginLeft: "30px" }}>Gangakhed</span> <br />
+          <span style={{ marginLeft: "30px" }}>June 2015 – March 2017</span>
         </p>
       </>
     );
@@ -155,6 +184,7 @@ export default function About() {
     <Box display={'flex'} flexDirection={'column'} alignItems={'center'} mt={'3rem'}>
       <Terminal text={aboutMeText()} />
       <Terminal text={skillsText()} />
+      <Terminal text={ExperienceText()} />
       <Terminal text={educationText()} />
       <Terminal text={miscText()} />
     </Box>

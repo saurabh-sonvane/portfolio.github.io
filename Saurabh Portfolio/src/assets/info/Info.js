@@ -40,17 +40,15 @@ export const info = {
       label: 'linkedin',
     },
     {
-      link: 'https://github.com/s17200',
+      link: 'https://github.com/saurabh-sonvane/',
       icon: 'fa fa-github',
       label: 'github',
     },
   
    
   ],
-  bio: "Analytical and detail-oriented Full Stack Developer capable of writing production-ready code using React JS, Redux, and CSS on the Front-End & NodeJS ,Express,MongoDB on the Backend to build an application .",
+  bio: "Full Stack Developer with 2+ years of experience in building scalable web and mobile apps. Skilled in writing clean, production-ready code with strong problem-solving skills. Eager to contribute to impactful projects and team success.",
   skills: {
-    // you dont havew to strictly follow the 'languages', 'frameworks', 'databases', 'cloudServices', and 'tools' categories. You can add your own if you'd like.
-    // but the structure should be the same, an array of strings and the key should be one word, no spaces.
     Technical_Skills: ['Express', 'Node JS', 'JavaScript', 'Mongo DB', 'JAVA', 'JSON' ,'DSA', 'React JS', 'Redux', 'Next JS', 'C++', 'HTML', 'Chakra UI', 'CSS', 'GIT'],
     Soft_Skills:['Observation','Problem-Solving','Adaptability','Multi-tasking ']
   
@@ -75,9 +73,24 @@ export const info = {
       label: 'Exploring New Places',
       emoji: '✈️',
     },
- 
-    // Same as above, change the emojis to match / relate to your hobbies or interests.
-    // You can also remove the emojis if you'd like, I just think they look cute :P
+
   ],
+
+  Experience: [
+    {
+      companyName:'Ajackus',
+      Location:'Remote',
+      From:'Feb 2024',
+      To:"July 2025",
+      position:"Associate Software Engineer",
+    }
+  ],
+
+  Projects: [
+    {
+       ProjectName:"Placeprep",
+    }
+  ]
+
  
 };
